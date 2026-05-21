@@ -32,9 +32,7 @@ try {
     } else {
         echo "<p>🔹 O banco de dados já possui registros, os dados de teste não foram duplicados.</p>";
     }
-
-    echo "<br><a href='index.php'>Ir para a página principal</a>";
-
+    echo "<br><a href='index.php'>Atualizar a página</a>";
 } catch (PDOException $e) {
     echo "🚨 Erro ao instalar o banco de dados: " . $e->getMessage();
 }

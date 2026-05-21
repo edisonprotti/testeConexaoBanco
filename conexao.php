@@ -1,10 +1,10 @@
 <?php
 // Código limpo e sem espaços fantasmas para o Railway
-$servidor = getenv('MYSQLHOST') ?: 'localhost';
-$user = getenv('MYSQLUSER') ?: 'root';
-$pass = getenv('MYSQLPASSWORD') ?: '';
-$db = getenv('MYSQLDATABASE') ?: 'aulaphp';
-$port = getenv('MYSQLPORT') ?: '3306';
+$servidor = mysql.railway.internal;
+$user = root;
+$pass = qvaBoMQcaojxgfFXUzWRkwZqOTvMxurd;
+$db = railway;
+$port = 3306;
 
 try {
     $dsn = "mysql:host={$servidor};port={$port};dbname={$db};charset=utf8mb4";
